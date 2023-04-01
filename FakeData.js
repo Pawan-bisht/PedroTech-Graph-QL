@@ -51,6 +51,7 @@ const UserList = [
       username: "rafe123",
       age: 60,
       nationality: "GERMANY",
+      friends:[]
     },
     {
       id: 5,
@@ -58,6 +59,7 @@ const UserList = [
       username: "kelly2019",
       age: 5,
       nationality: "CHILE",
+      friends: []
     },
   ];
   
