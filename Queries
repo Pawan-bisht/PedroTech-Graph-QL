@@ -1,0 +1,36 @@
+#Those queries written in GraphiQL
+
+query GetAUser($userId: ID!) {
+  user(id: $userId) {
+    name
+    username
+    nationality
+    age
+    friends {
+      age
+      name
+    } 
+    favoriteMovies {
+      name
+      isInTheaters
+    }
+  
+  }
+}
+
+query GetMovies {
+  movies {
+    id
+    isInTheaters
+    name
+  }
+}
+
+query GetAMovie($names: String!) {
+  movie(name: $names) {
+    id
+    isInTheaters
+    name
+    
+  }
+}
